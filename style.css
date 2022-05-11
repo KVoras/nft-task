@@ -109,10 +109,43 @@ p {
 }
 
 .grid {
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(195, 195, 195);
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
+}
+
+.grid > div {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tl {
+  color: orangered;
+  line-height: 100%;
+}
+
+.tr {
+  text-align: right;
+  color: rgb(83, 83, 83);
+}
+
+.ml {
+}
+
+.mr {
+  text-align: right;
+}
+
+.bl {
+  color: rgb(83, 83, 83);
+}
+
+.br {
+  color: rgb(83, 83, 83);
+  text-align: right;
 }
 
 /* Desktop */
