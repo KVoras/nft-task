@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 40px;
+  font-family: "Inter", sans-serif;
+  margin: 35px;
 }
 
 /* Header */
@@ -17,7 +17,7 @@ header {
 
 /* Introduction */
 
-main > :first-child {
+.intro {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
@@ -27,24 +27,24 @@ main > :first-child {
   min-width: 225px;
 }
 
-#launching {
-  color: blueviolet;
-  font-weight: 200;
+.launching {
+  color: rgb(160, 86, 230);
+  font-weight: 600;
   margin-bottom: 35px;
 }
 
-#no_other {
+.no_other {
   font-size: 35px;
   font-weight: 1000;
   margin-bottom: 35px;
 }
 
-#fomo {
+.fomo {
   color: rgb(70, 67, 67);
   margin-bottom: 35px;
 }
 
-#sign_up {
+.sign_up {
   width: 35%;
   text-align: center;
   font-size: 20px;
@@ -62,21 +62,26 @@ main > :first-child {
 /* Text on background */
 
 .background {
-  position: relative;
-  text-align: left;
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 320px;
+  width: 100%;
+  display: block;
   margin-bottom: 35px;
 }
 
 h1 {
-  position: absolute;
-  top: 75px;
-  left: 30px;
+  padding-top: 150px;
+  padding-left: 50px;
+  padding-right: 30px;
+  font-weight: 700;
 }
 
 p {
-  position: absolute;
-  top: 125px;
-  left: 30px;
+  padding-left: 50px;
+  padding-right: 30px;
 }
 
 .background img {
@@ -97,15 +102,32 @@ p {
 
 /* NFT section */
 
+h2 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.underline {
+  margin-bottom: 35px;
+}
+
+u {
+  font-weight: 400;
+}
+
 .selection {
   display: flex;
   justify-content: space-between;
-  overflow-x: scroll;
+  overflow-x: auto;
+  padding-bottom: 50px;
+  margin-bottom: 35px;
+  border-bottom: 2px solid rgb(195, 195, 195);
 }
 
 .selection > div {
   display: flex;
   flex-direction: column;
+  margin-right: 5px;
 }
 
 .grid {
@@ -113,6 +135,7 @@ p {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
+  border-radius: 0px 0px 15px 15px;
 }
 
 .grid > div {
