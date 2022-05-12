@@ -45,12 +45,13 @@ header {
 }
 
 .sign_up {
-  width: 35%;
+  width: 100px;
+  min-width: 100px;
   text-align: center;
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 2px solid rgb(255, 102, 0);
+  border: 3px solid rgb(255, 102, 0);
   border-radius: 50px;
 }
 
@@ -155,9 +156,6 @@ u {
   color: rgb(83, 83, 83);
 }
 
-.ml {
-}
-
 .mr {
   text-align: right;
 }
@@ -169,6 +167,41 @@ u {
 .br {
   color: rgb(83, 83, 83);
   text-align: right;
+}
+
+/* Footer */
+
+footer img {
+  max-height: 400px;
+}
+
+footer .intro {
+  border-bottom: 2px solid rgb(195, 195, 195);
+  margin-bottom: 35px;
+}
+
+.f_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+table {
+  text-align: center;
+  color: grey;
+}
+
+th {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+section {
+  color: grey;
+  margin-top: 35px;
+}
+
+section :last-child {
+  display: none;
 }
 
 /* Desktop */
